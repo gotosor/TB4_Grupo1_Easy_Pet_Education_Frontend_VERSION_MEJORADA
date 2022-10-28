@@ -1,0 +1,74 @@
+<div class="container-fluid px-5" *ngIf="seleccion !== undefined">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="card bg-transparent border-0">
+        <div class="card-header bg-transparent border-0">
+          <h5 class="card-title text-center">¿Qué mascota tienes?</h5>
+        </div>
+        <div class="card-body bg-transparent text-center">
+          <select
+            class="form-control w-50 mx-auto"
+            (change)="cambiarTipo($event)"
+          >
+            <option *ngFor="let item of data" [value]="item.id">
+              {{ item.nombre }}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <img class="imgInput" [src]="seleccion.imagenCmb" alt="" />
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <h5>Alimentos</h5>
+      <p class="text-left px-5">{{ seleccion.textoAli }}</p>
+      <button class="btn-more-info">Más Información</button>
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <img class="imgInput" [src]="seleccion.imagenAli" alt="" />
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <img class="imgInput" [src]="seleccion.imagenHig" alt="" />
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <h5>Higiene</h5>
+      <p class="text-left px-5">{{ seleccion.textoHig }}</p>
+      <button class="btn-more-info">Más Información</button>
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <h5>Ambiente</h5>
+      <p class="text-left px-5">{{ seleccion.textoAmb }}</p>
+      <button class="btn-more-info">Más Información</button>
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <img class="imgInput" [src]="seleccion.imagenAmb" alt="" />
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <img class="imgInput" [src]="seleccion.imagenRep" alt="" />
+    </div>
+    <div class="col-12 col-md-6 text-center mt-3">
+      <h5>Reproducción</h5>
+      <p class="text-left px-5">{{ seleccion.textoRep }}</p>
+      <button class="btn-more-info">Más Información</button>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-12 col-md-4 text-center">
+      <video class="videoArr" controls [src]="seleccion.videoIzq">
+        Este video no está disponible
+      </video>
+    </div>
+    <div class="col-12 col-md-4 text-center">
+      <video class="videoArr" controls [src]="seleccion.videoCent">
+        Este video no está disponible
+      </video>
+    </div>
+    <div class="col-12 col-md-4 text-center">
+      <video class="videoArr" controls [src]="seleccion.videoDere">
+        Este video no está disponible
+      </video>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

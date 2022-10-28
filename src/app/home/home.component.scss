@@ -1,0 +1,65 @@
+.banner {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  .imgBanner {
+    width: 100%;
+  }
+}
+
+.card {
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  .imagenChica {
+    height: 12rem;
+    margin: 0 auto;
+  }
+  .imagenGrande {
+    width: 60%;
+    height: 17rem;
+  }
+  .card-body.flexi {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.video {
+  width: 100%;
+}
+.iconoGrande {
+  width: 50%;
+}
+.btnDesca {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.row.siuu {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .text-right,
+  .text-left {
+    text-align: center;
+  }
+  .row.siuu {
+    width: 100%;
+  }
+}

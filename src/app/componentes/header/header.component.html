@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="navbar-brand">
+      <img src="/assets/iconoHeader.png" alt="" />
+      <img src="/assets/title.png" alt="" />
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-center" (click)="inicio()">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" (click)="mascotas()">Mascotas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="">Programas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="">Contacto Especialista</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="">Aprende con nosotros</a>
+        </li>
+        <li *ngIf="user !== ''" (click)="modify()" class="nav-item">
+          <a class="nav-link text-center">Modificar Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="">Mi veterinaria</a>
+        </li>
+        <li *ngIf="user === ''" (click)="login()" class="nav-item">
+          <a class="nav-link mx-auto text-center btn-option">Login</a>
+        </li>
+        <li *ngIf="user === ''" class="nav-item">
+          <button class="nav-link mx-auto text-center btn-option">
+            Register
+          </button>
+        </li>
+        <li class="nav-item text-center" *ngIf="user !== ''">
+          <a class="nav-link mx-auto">Usuario: {{ user }}</a>
+        </li>
+        <li (click)="logout()" class="nav-item text-center" *ngIf="user !== ''">
+          <a class="nav-link mx-auto btn btn-danger">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,112 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <form [formGroup]="menuForm">
+        <div class="form-group">
+          <label for="nombre">Nombre de Tipo Mascota</label>
+          <input
+            formControlName="nombre"
+            class="form-control"
+            id="nombre"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="imagenCmb">Ruta Imagen Combo</label>
+          <input
+            formControlName="imagenCmb"
+            class="form-control"
+            id="imagenCmb"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="imagenAli">Ruta Imagen Alimentos</label>
+          <input
+            formControlName="imagenAli"
+            class="form-control"
+            id="imagenAli"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="imagenHig">Ruta Imagen Higiene</label>
+          <input
+            formControlName="imagenHig"
+            class="form-control"
+            id="imagenHig"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="imagenRep">Ruta Imagen Reproducción</label>
+          <input
+            formControlName="imagenRep"
+            class="form-control"
+            id="imagenRep"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="textoAli">Texto Alimentación</label>
+          <input
+            formControlName="textoAli"
+            class="form-control"
+            id="textoAli"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="textoHig">Texto Higiene</label>
+          <input
+            formControlName="textoHig"
+            class="form-control"
+            id="textoHig"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="textoRep">Texto Reproducción</label>
+          <input
+            formControlName="textoRep"
+            class="form-control"
+            id="textoRep"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="videoIzq">Ruta Video Izquierda</label>
+          <input
+            formControlName="videoIzq"
+            class="form-control"
+            id="videoIzq"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="videoCent">Ruta Video Centro</label>
+          <input
+            formControlName="videoCent"
+            class="form-control"
+            id="videoCent"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label for="videoDere">Ruta Video Derecha</label>
+          <input
+            formControlName="videoDere"
+            class="form-control"
+            id="videoDere"
+            type="text"
+          />
+        </div>
+        <div class="text-center mt-3">
+          <button class="btn btn-success" (click)="editarDatosMascotasById()">
+            Ingresar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

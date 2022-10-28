@@ -1,0 +1,7 @@
+[
+  { "id": 1, "nombre": "Hurón", "carpeta": "/assets/huron/" },
+  { "id": 2, "nombre": "Tortuga", "carpeta": "/assets/tortuga/" },
+  { "id": 3, "nombre": "Erizo", "carpeta": "/assets/erizo/" },
+  { "id": 4, "nombre": "Serpiente", "carpeta": "/assets/serpiente/" },
+  { "id": 5, "nombre": "Conejo", "carpeta": "/assets/conejo/" }
+]

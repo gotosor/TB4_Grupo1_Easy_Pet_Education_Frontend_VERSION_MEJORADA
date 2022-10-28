@@ -1,0 +1,22 @@
+.icono {
+  background-color: transparent;
+  height: 52px;
+  img {
+    background-color: transparent;
+    height: 52px;
+  }
+}
+
+.nav-link:hover {
+  font-weight: 600;
+}
+
+.btn-option {
+  width: 130px;
+  padding: 10.5px;
+  text-align: center;
+  margin-right: 16px;
+  background-color: var(--var-gris);
+  border-radius: 10px;
+  border: 1px solid var(--var-gris);
+}

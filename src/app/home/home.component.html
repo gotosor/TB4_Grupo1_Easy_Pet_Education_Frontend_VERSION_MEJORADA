@@ -1,0 +1,108 @@
+<div class="container-fluid px-3" *ngIf="data !== undefined">
+  <div class="banner">
+    <img class="imgBanner" src="/assets/banner.png" alt="" />
+  </div>
+  <div class="row" style="margin-top: 60px">
+    <div *ngFor="let item of data" [class]="item.columna">
+      <div class="card">
+        <div class="row g-0 m-0 p-0">
+          <div [class]="item.subcol">
+            <img [src]="item.ruta" [class]="item.claseImagen" alt="" />
+          </div>
+          <div [class]="item.subcol">
+            <div class="card-body flexi">
+              <h6 class="text-center">{{ item.texto }}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<div class="container-fluid px-3 mt-5">
+  <div class="card">
+    <div class="row m-0">
+      <div class="col-12 col-md-6">
+        <video class="video" src="/assets/video/videoIndex.mp4" controls>
+          Tu navegador no admite el elemento <code>video</code>.
+        </video>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card-body flexi">
+          <h5 class="card-title">Video de Presentación</h5>
+          <p class="card-text">Conoce todo sobre nuestros servicios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card p-0">
+    <div class="row m-0 p-0">
+      <div class="col-12 col-md-6 p-0">
+        <div class="card-body flexi">
+          <p class="card-text">
+            Aprende tips y consejos sobre el cuidado de nuestras mascotas
+            exóticas y peculiares
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 p-0">
+        <img class="iconoGrande" src="/assets/iconoGrande.png" alt="" />
+        <div class="row mx-0 mt-4 p-0 g-0">
+          <div class="col-12 col-md-1 p-0"></div>
+          <div class="col-12 col-md-4 p-0">
+            <button class="btnDesca">Descargalo aquí</button>
+          </div>
+          <div class="col-12 col-md-2 p-0"></div>
+          <div class="col-12 col-md-4 p-0">
+            <button class="btnDesca">Descargalo aquí</button>
+          </div>
+          <div class="col-12 col-md-1 p-0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 mt-3">
+      <div class="row">
+        <div class="col-12 col-md-6 text-right">Calificanos:</div>
+        <div class="col-12 col-md-6">
+          <div class="row px-3 siuu">
+            <div class="col-1 px-0"></div>
+            <div class="col-2 px-0 text-center text-danger">
+              <i class="bi bi-emoji-angry"></i>
+            </div>
+            <div class="col-2 px-0 text-center text-warning">
+              <i class="bi bi-emoji-frown"></i>
+            </div>
+            <div class="col-2 px-0 text-center text-info">
+              <i class="bi bi-emoji-neutral"></i>
+            </div>
+            <div class="col-2 px-0 text-center text-success-50">
+              <i class="bi bi-emoji-smile"></i>
+            </div>
+            <div class="col-2 px-0 text-center text-success">
+              <i class="bi bi-emoji-heart-eyes"></i>
+            </div>
+            <div class="col-1 px-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mt-3">
+      <div class="row">
+        <div class="col-12 col-md-6 text-right">Comentario:</div>
+        <div class="col-12 col-md-6 text-left">
+          <textarea
+            class="form-control w-50"
+            name=""
+            id=""
+            cols="10"
+            rows="5"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

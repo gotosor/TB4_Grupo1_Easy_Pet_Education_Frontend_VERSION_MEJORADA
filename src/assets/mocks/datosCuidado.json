@@ -1,0 +1,137 @@
+{
+  "datosMascota": [
+    {
+      "id": 1,
+      "nombre": "Tortugas",
+      "imagenCmb": "/assets/fotos/tortuga/1.png",
+      "imagenAli": "/assets/fotos/tortuga/2.png",
+      "imagenHig": "/assets/fotos/tortuga/3.png",
+      "imagenRep": "/assets/fotos/tortuga/5.png",
+      "textoAli": "Lo más habitual es que coman toda clase de lechugas, escarola, endivias, rúcula y canónigos. También otro tipo de verduras como, por ejemplo, las, acelgas, la col o las hojas de nabo. Asimismo, algunas especies de flores y plantas como la alfalfa fresca, el diente de león o los tréboles también son bienvenidas.",
+      "textoHig": "Mantener nuestro acuaterrario limpio es básico, por lo que tendrás que ser disciplinado con la limpieza de su hábitat. Si se trata de un tortuguero pequeño de menos de 15 litros, deberemos cambiar el agua entera 2 veces por semana. Si es superior, puedes cambiar el agua una vez por semana. Esto también dependerá de la cantidad de tortugas que tengas y de si disponen de un equipo o sistema de filtración.",
+      "textoRep": "Además de la madurez sexual, para saber cómo se reproducen las tortugas domésticas es importante recordar que son animales ovíparos. Es decir, la reproducción es a través de huevos. Este proceso suele ser un poco violento para las hembras, por lo que es importante estar atento para evitar cualquier mal mayor.",
+      "videoIzq": "/assets/video/videoIndex.mp4",
+      "videoCent": "/assets/video/videoIndex.mp4",
+      "videoDere": "/assets/video/videoIndex.mp4"
+    },
+    {
+      "id": 2,
+      "nombre": "Hurón",
+      "imagenCmb": "/assets/fotos/huron/1.jpg",
+      "imagenAli": "/assets/fotos/huron/2.webp",
+      "imagenHig": "/assets/fotos/huron/3.jpg",
+      "imagenAmb": "/assets/fotos/huron/4.png",
+      "imagenRep": "/assets/fotos/huron/5.png",
+      "textoAli": "El hurón es un animal exclusivamente carnívoro, con un metabolismo muy rápido que requiere disponer de comida cada pocas horas. Son auténticos cazadores que se alimentan de presas enteras, cazando topillos, ratones, ratas, conejos, aves y un largo etc.",
+      "textoHig": "Los hurones necesitan cuidados higiénicos regularmente. Como mínimo, una vez al mes, pero preferiblemente semanalmente, se le tienen que limpiar los oídos, cortar las uñas y revisar sus dientes. Periódicamente, también es bueno hacerles un baño –que puede ser en seco- y, obviamente, hay que mantener su jaula y su lecho en buenas condiciones, siendo el mejor remedio para evitar el excesivo olor corporal.",
+      "textoAmb": "La jaula, o el lugar donde habiten debe contar con un refugio, tubos para que jueguen, y hamacas, que utilizan para dormir. Los hurones toleran sin problemas temperaturas entre 15 y 25ºC, una humedad de entre 45 y 55% y 12 a 16 horas de luz.",
+      "textoRep": "Las hembras tienen ovulación inducida, es decir, ésta se produce después de la monta del macho, aproximadamente unas 30 horas después. La gestación dura aproximadamente 42 días y el tamaño medio de la camada es de 6-9 crías. Las hembras paren entre marzo y agosto y en condiciones normales tienen dos camadas al año.",
+      "videoIzq": "/assets/video/videoIndex.mp4",
+      "videoCent": "/assets/video/videoIndex.mp4",
+      "videoDere": "/assets/video/videoIndex.mp4"
+    },
+    {
+      "id": 3,
+      "nombre": "Erizo",
+      "imagenCmb": "/assets/fotos/erizo/1.jpg",
+      "imagenAli": "/assets/fotos/erizo/2.jpg",
+      "imagenHig": "/assets/fotos/erizo/3.jpg",
+      "imagenAmb": "/assets/fotos/erizo/4.png",
+      "imagenRep": "/assets/fotos/erizo/5.jfif",
+      "textoAli": "Algunos alimentos pueden ser manzanas, duraznos, peras, plátanos, cerezas pepinos dulces, mangos: debes pelarlos y dárselos a tu erizo cortados en pequeños pedazos o molidos como papilla. Sandía y melón: tienes que quitarles la cáscara y sus semillas. También puedes cortarlos en trozos pequeños, aunque no es tan necesario ya que son blandos.",
+      "textoHig": "Este pequeño mamífero es muy limpio, por lo que no necesitarás lavarlo más que cada dos o tres meses con agua tibia (¡nunca caliente!), con champú neutro y un cepillo blando, por ejemplo, de dientes, solo para las púas. La barriguita y las patas límpiaselas con las manos.",
+      "textoAmb": "Los hábitats más populares para erizos de tierra son los contenedores plásticos grandes (de aproximadamente 100 litros), las jaulas de rejillas modulares (C&C cages), jaulas para animales pequeños de piso plano (comunes en tiendas de mascotas o veterinarias) y hábitats fabricados artesanalmente.",
+      "textoRep": "Cuando se da el cortejo, se produce lo que se llama el “carrusel de los erizos”: el macho empieza a correr en círculos alrededor de la hembra, emitiendo gritos y quejidos para llamar su atención. ¡Puede durar horas! Cuando por fin la hembra se muestra receptiva y acepta la cópula, el erizo macho la monta.",
+      "videoIzq": "/assets/video/videoIndex.mp4",
+      "videoCent": "/assets/video/videoIndex.mp4",
+      "videoDere": "/assets/video/videoIndex.mp4"
+    },
+    {
+      "id": 4,
+      "nombre": "Serpiente",
+      "imagenCmb": "/assets/fotos/serpiente/1.jpg",
+      "imagenAli": "/assets/fotos/serpiente/2.jpg",
+      "imagenHig": "/assets/fotos/serpiente/3.jpg",
+      "imagenRep": "/assets/fotos/serpiente/5.jpg",
+      "textoAli": "La base de la dieta de las serpientes domésticas son los roedores, en especial los ratones. También se les pueden alimentar con pescado y con insectos, evitando siempre los grillos, ya que pueden comerse sus escamas. Algunas especies pueden comer también huevos y algunos anfibios pequeños, como las ranas.",
+      "textoHig": "El terrario debe desinfectarse una vez por mes.",
+      "textoRep": "Como ya se sabe, las serpientes solo necesitan unir las cloacas, las cavidades exteriores que sirven tanto como aparato reproductivo como urinario. El macho extiende entonces uno de sus hemipenes, sus órganos sexuales, en la cloaca de la hembra, donde deposita el esperma.",
+      "videoIzq": "/assets/video/videoIndex.mp4",
+      "videoCent": "/assets/video/videoIndex.mp4",
+      "videoDere": "/assets/video/videoIndex.mp4"
+    },
+    {
+      "id": 5,
+      "nombre": "Conejo",
+      "imagenCmb": "/assets/fotos/conejo/1.jpg",
+      "imagenAli": "/assets/fotos/conejo/2.jpg",
+      "imagenHig": "/assets/fotos/conejo/3.jpg",
+      "imagenAmb": "/assets/fotos/conejo/4.jpg",
+      "imagenRep": "/assets/fotos/conejo/5.jpg",
+      "textoAli": "El conejo es un animal estrictamente herbívoro, lo que significa que su dieta se compone sólo de alimentos de origen vegetal: forrajes, cereales, verduras y frutas.",
+      "textoHig": "Es muy recomendable que dediques unos minutos a diario a cepillar a tu conejo. Así reducirás la cantidad de pelo que suelta por casa y mantendrás su capa brillante, limpia y saludable. En conejos de pelo largo es imprescindible un peinado y desanudado diario, ya que su tipo de pelo puede llegar a ser muy problemático.",
+      "textoAmb": "¿Dónde vive el conejo común? Generalmente habita en praderas secas y cubiertas de matorrales para poder esconderse, evitando al mismo tiempo los grandes bosques en los que su exposición se incrementaría de forma notable. Para construir las madrigueras prefieren asentarse en suelo arenoso.",
+      "textoRep": "La gestación de la hembra dura aproximadamente 31 días y la lactancia 56 días, totalizando 87 días. Por lo tanto cada hembra está teóricamente en condiciones de parir y criar cuatro camadas (87 x 4 = 348) en 365 días, con un período de descanso de 17 días.",
+      "videoIzq": "/assets/video/videoIndex.mp4",
+      "videoCent": "/assets/video/videoIndex.mp4",
+      "videoDere": "/assets/video/videoIndex.mp4"
+    }
+  ],
+  "mascotas": [
+    {
+      "id": 1,
+      "nombre": "Tortuga",
+      "carpeta": "/assets/tortuga/"
+    },
+    {
+      "id": 2,
+      "nombre": "Hurón",
+      "carpeta": "/assets/huron/"
+    },
+    {
+      "id": 3,
+      "nombre": "Erizo",
+      "carpeta": "/assets/erizo/"
+    },
+    {
+      "id": 4,
+      "nombre": "Serpiente",
+      "carpeta": "/assets/serpiente/"
+    },
+    {
+      "id": 5,
+      "nombre": "Conejo",
+      "carpeta": "/assets/conejo/"
+    }
+  ],
+  "inicio": [
+    {
+      "ruta": "/assets/loro.png",
+      "claseImagen": "imagenChica",
+      "columna": "col-12 col-md-4 p-0",
+      "subcol": "col-12 p-0",
+      "texto": "Sabía que los loros son animales sociales y requieren compañía constante?"
+    },
+    {
+      "ruta": "/assets/huron.png",
+      "claseImagen": "imagenChica",
+      "columna": "col-12 col-md-4 p-0",
+      "subcol": "col-12 p-0",
+      "texto": "¿O también que los hurones son carnívoros con un metabolismo muy acelerado?"
+    },
+    {
+      "ruta": "/assets/conejo-diente.png",
+      "claseImagen": "imagenChica",
+      "columna": "col-12 col-md-4 p-0",
+      "subcol": "col-12 p-0",
+      "texto": "Los dientes de los conejos no dejan de crecer. Por ello, se recomienda juguetes especializados."
+    },
+    {
+      "ruta": "/assets/tucan.png",
+      "claseImagen": "imagenGrande",
+      "columna": "col-12 p-0",
+      "subcol": "col-md-6 col-12 p-0",
+      "texto": "¿Quieres darle una mejor vida a tu mascota? Te ayudaremos con su cuidado"
+    }
+  ]
+}
