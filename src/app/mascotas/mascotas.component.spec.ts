@@ -1,6 +1,10 @@
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TipoMascotasService } from '../services/tipo-mascotas.service';
 
 import { MascotasComponent } from './mascotas.component';
+import { FormsModule } from '@angular/forms';
 
 describe('MascotasComponent', () => {
   let component: MascotasComponent;
@@ -8,9 +12,10 @@ describe('MascotasComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MascotasComponent ]
-    })
-    .compileComponents();
+      declarations: [MascotasComponent],
+      imports: [HttpClientModule, RouterTestingModule, FormsModule],
+      providers: [TipoMascotasService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

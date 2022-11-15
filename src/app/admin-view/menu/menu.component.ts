@@ -18,7 +18,7 @@ export class MenuComponent implements OnInit {
     private toast: ToastrService
   ) {
     this.menuForm = this.fb.group({
-      id: [''],
+      mascotaId: [''],
       nombre: ['', [Validators.required]],
       imagenCmb: ['', [Validators.required]],
       imagenAli: ['', [Validators.required]],
@@ -36,18 +36,18 @@ export class MenuComponent implements OnInit {
   ngOnChanges(changes: SimpleChanges): void {
     if (!changes['idMascotas'].firstChange) {
       this.menuForm.patchValue({
-        id: changes['idMascotas'].currentValue[0].id,
-        nombre: changes['idMascotas'].currentValue[0].nombre,
-        imagenCmb: changes['idMascotas'].currentValue[0].imagenCmb,
-        imagenAli: changes['idMascotas'].currentValue[0].imagenAli,
-        imagenHig: changes['idMascotas'].currentValue[0].imagenHig,
-        imagenRep: changes['idMascotas'].currentValue[0].imagenRep,
-        textoAli: changes['idMascotas'].currentValue[0].textoAli,
-        textoHig: changes['idMascotas'].currentValue[0].textoHig,
-        textoRep: changes['idMascotas'].currentValue[0].textoRep,
-        videoIzq: changes['idMascotas'].currentValue[0].videoIzq,
-        videoCent: changes['idMascotas'].currentValue[0].videoCent,
-        videoDere: changes['idMascotas'].currentValue[0].videoDere,
+        mascotaId: changes['idMascotas'].currentValue.mascotaId,
+        nombre: changes['idMascotas'].currentValue.nombre,
+        imagenCmb: changes['idMascotas'].currentValue.imagenCmb,
+        imagenAli: changes['idMascotas'].currentValue.imagenAli,
+        imagenHig: changes['idMascotas'].currentValue.imagenHig,
+        imagenRep: changes['idMascotas'].currentValue.imagenRep,
+        textoAli: changes['idMascotas'].currentValue.textoAli,
+        textoHig: changes['idMascotas'].currentValue.textoHig,
+        textoRep: changes['idMascotas'].currentValue.textoRep,
+        videoIzq: changes['idMascotas'].currentValue.videoIzq,
+        videoCent: changes['idMascotas'].currentValue.videoCent,
+        videoDere: changes['idMascotas'].currentValue.videoDere,
       });
     }
   }
@@ -55,7 +55,10 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {}
   editarDatosMascotasById() {
     this.mascotas
-      .editarDatosMascotasById(this.menuForm.value.id, this.menuForm.value)
+      .editarDatosMascotasById(
+        this.menuForm.value.mascotaId,
+        this.menuForm.value
+      )
       .subscribe((ele) => {
         if (ele) {
           this.toast.success('Registro modificado correctamente.');

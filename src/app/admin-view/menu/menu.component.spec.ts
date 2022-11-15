@@ -1,4 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
+import { TipoMascotasService } from 'src/app/services/tipo-mascotas.service';
 
 import { MenuComponent } from './menu.component';
 
@@ -8,9 +13,15 @@ describe('MenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MenuComponent ]
-    })
-    .compileComponents();
+      declarations: [MenuComponent],
+      imports: [
+        ReactiveFormsModule,
+        RouterTestingModule,
+        HttpClientModule,
+        ToastrModule.forRoot(),
+      ],
+      providers: [TipoMascotasService, ToastrService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

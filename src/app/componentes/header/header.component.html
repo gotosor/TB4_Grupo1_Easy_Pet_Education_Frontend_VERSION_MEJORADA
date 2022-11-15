@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container-fluid contenedorFle">
     <div class="navbar-brand">
       <img src="/assets/iconoHeader.png" alt="" />
       <img src="/assets/title.png" alt="" />
@@ -16,43 +16,43 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-2">
           <a class="nav-link text-center" (click)="inicio()">Inicio</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-2">
+          <a class="nav-link text-center" (click)="nosotros()">Nosotros</a>
+        </li>
+        <li class="nav-item mx-2">
           <a class="nav-link text-center" (click)="mascotas()">Mascotas</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" href="">Nosotros</a>
+        <li class="nav-item mx-2">
+          <a class="nav-link text-center" (click)="veterinarias()">
+            Veterinarios
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" href="">Programas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" href="">Contacto Especialista</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" href="">Aprende con nosotros</a>
-        </li>
-        <li *ngIf="user !== ''" (click)="modify()" class="nav-item">
+        <li *ngIf="user !== ''" (click)="modify()" class="nav-item mx-2">
           <a class="nav-link text-center">Modificar Data</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" href="">Mi veterinaria</a>
+        <li class="nav-item mx-2">
+          <a class="nav-link text-center" (click)="contacto()">Contáctanos</a>
         </li>
-        <li *ngIf="user === ''" (click)="login()" class="nav-item">
-          <a class="nav-link mx-auto text-center btn-option">Login</a>
+        <li *ngIf="user === ''" (click)="login()" class="nav-item mx-2">
+          <a class="nav-link mx-auto text-center btn-option">Ingresar</a>
         </li>
-        <li *ngIf="user === ''" class="nav-item">
+        <li *ngIf="user === ''" class="nav-item mx-2">
           <button class="nav-link mx-auto text-center btn-option">
-            Register
+            Registrar
           </button>
         </li>
-        <li class="nav-item text-center" *ngIf="user !== ''">
+        <li class="nav-item mx-2 text-center" *ngIf="user !== ''">
           <a class="nav-link mx-auto">Usuario: {{ user }}</a>
         </li>
-        <li (click)="logout()" class="nav-item text-center" *ngIf="user !== ''">
+        <li
+          (click)="logout()"
+          class="nav-item mx-2 text-center"
+          *ngIf="user !== ''"
+        >
           <a class="nav-link mx-auto btn btn-danger">Salir</a>
         </li>
       </ul>

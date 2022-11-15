@@ -31,4 +31,13 @@ export class HeaderComponent implements OnInit {
   mascotas() {
     this.router.navigate(['/mascotas']);
   }
+  nosotros() {
+    this.router.navigate(['/nosotros']);
+  }
+  veterinarias() {
+    this.router.navigate(['/veterinarias']);
+  }
+  contacto() {
+    this.router.navigate(['/contacto']);
+  }
 }

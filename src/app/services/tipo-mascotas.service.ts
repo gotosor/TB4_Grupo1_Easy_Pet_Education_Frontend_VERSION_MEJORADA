@@ -7,16 +7,16 @@ import { environment } from 'src/environments/environment';
 })
 export class TipoMascotasService {
   constructor(private http: HttpClient) {}
-  traerMascotas() {
+  traerDatosMascotas() {
     return this.http.get<any>(`${environment.urlApi}mascotas`);
   }
-  traerDatosMascotas() {
-    return this.http.get<any>(`${environment.urlApi}datosMascota`);
+  traerMascotas(id: number) {
+    return this.http.get<any>(`${environment.urlApi}mascotas/aprende/${id}`);
   }
   traerDatosMascotasById(id: number) {
-    return this.http.get<any>(`${environment.urlApi}datosMascota?id=${id}`);
+    return this.http.get<any>(`${environment.urlApi}mascotas/aprende/${id}`);
   }
   editarDatosMascotasById(id: number, data: any) {
-    return this.http.put<any>(`${environment.urlApi}datosMascota/${id}`, data);
+    return this.http.put<any>(`${environment.urlApi}mascotas/${id}`, data);
   }
 }

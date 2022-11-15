@@ -1,0 +1,19 @@
+.data {
+  justify-content: space-between;
+}
+
+.card {
+  width: 90%;
+  z-index: 100;
+  border-radius: 20px;
+}
+
+.banner {
+  width: 100%;
+  margin-right: 0;
+}
+@media screen and (max-width: 700px) {
+  .banner {
+    width: 80%;
+  }
+}

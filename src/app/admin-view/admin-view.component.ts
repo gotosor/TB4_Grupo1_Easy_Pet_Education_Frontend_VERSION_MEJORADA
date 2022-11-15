@@ -12,7 +12,6 @@ export class AdminViewComponent implements OnInit {
 
   ngOnInit(): void {}
   buscarDatos(event: any) {
-    console.log(event);
     this.mascotasSvc.traerDatosMascotasById(event).subscribe((ele) => {
       this.id = ele;
     });

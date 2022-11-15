@@ -13,7 +13,7 @@ export class SidebarComponent implements OnInit {
   constructor(private mascotasSvc: TipoMascotasService) {}
 
   ngOnInit(): void {
-    this.mascotasSvc.traerMascotas().subscribe((element) => {
+    this.mascotasSvc.traerDatosMascotas().subscribe((element) => {
       this.menuItem = element;
     });
   }

@@ -10,7 +10,7 @@
             class="form-control w-50 mx-auto"
             (change)="cambiarTipo($event)"
           >
-            <option *ngFor="let item of data" [value]="item.id">
+            <option *ngFor="let item of data" [value]="item.mascotaId">
               {{ item.nombre }}
             </option>
           </select>

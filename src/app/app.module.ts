@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AdminViewModule } from './admin-view/admin-view.module';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { VeterinariaComponent } from './veterinaria/veterinaria.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { AdminViewModule } from './admin-view/admin-view.module';
     HomeComponent,
     MascotasComponent,
     LoginComponent,
+    NosotrosComponent,
+    VeterinariaComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,

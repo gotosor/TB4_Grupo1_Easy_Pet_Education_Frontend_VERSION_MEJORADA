@@ -1,4 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { TipoMascotasService } from 'src/app/services/tipo-mascotas.service';
 
 import { SidebarComponent } from './sidebar.component';
 
@@ -8,9 +12,10 @@ describe('SidebarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidebarComponent ]
-    })
-    .compileComponents();
+      declarations: [SidebarComponent],
+      imports: [ReactiveFormsModule, RouterTestingModule, HttpClientModule],
+      providers: [TipoMascotasService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

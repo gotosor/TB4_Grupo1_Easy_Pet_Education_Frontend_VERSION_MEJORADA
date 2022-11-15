@@ -1,4 +1,7 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { TipoMascotasService } from '../services/tipo-mascotas.service';
 
 import { AdminViewComponent } from './admin-view.component';
 
@@ -8,9 +11,10 @@ describe('AdminViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AdminViewComponent ]
-    })
-    .compileComponents();
+      declarations: [AdminViewComponent],
+      imports: [RouterTestingModule, HttpClientModule],
+      providers: [TipoMascotasService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

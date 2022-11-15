@@ -11,8 +11,6 @@ export class HomeComponent implements OnInit {
   constructor(private inicioSvc: AuthService) {}
 
   ngOnInit(): void {
-    this.inicioSvc.inicio().subscribe((element) => {
-      this.data = element;
-    });
+    this.inicioSvc.inicio().subscribe((element) => (this.data = element));
   }
 }

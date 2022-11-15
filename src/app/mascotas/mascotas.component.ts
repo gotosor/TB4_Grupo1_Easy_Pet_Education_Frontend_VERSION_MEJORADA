@@ -19,8 +19,7 @@ export class MascotasComponent implements OnInit {
   }
   cambiarTipo(event: any) {
     this.seleccion = this.data.filter(
-      (element) => element.id == event.target.value
+      (element) => element.mascotaId == event.target.value
     )[0];
-    console.log(this.seleccion);
   }
 }
